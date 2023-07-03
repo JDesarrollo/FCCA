@@ -1,0 +1,66 @@
+
+    .bg-green {
+      background-color: #0F7733;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .bg-greenmenu {
+      background-color: #0c3d00;
+    }
+
+    .bg-logo {
+      background-color: #0F7733;
+    }
+
+    .iconosredes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+    }
+
+    .btn-titulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 3rem;
+    }
+
+    .textotitulo p {
+      text-align: center;
+      font-size: medium;
+      font-style: oblique;
+    }
+
+    .contenido {
+
+      min-height: 100vh;
+
+    }
+
+    .contenido2 {
+
+      min-height: 10vh;
+
+    }
+
+    /**SM**/
+    @media (min-width: 576px) {
+      .bg-logo {
+        background-color: #ffffff !important;
+      }
+    }

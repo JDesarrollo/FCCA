@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <link rel="shortcut icon" href="images/icono.png">
+  <title>Facultad de Ciencias Agron&oacute;micas</title>
+  <!--<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/grid/">-->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="grid.css" rel="stylesheet">
+  <style>
+    .bg-green {
+      background-color: #0F7733;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .bg-greenmenu {
+      background-color: #0c3d00;
+    }
+
+    .bg-logo {
+      background-color: #0F7733;
+    }
+
+    .iconosredes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+    }
+
+    .btn-titulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 3rem;
+    }
+
+    .textotitulo p {
+      text-align: center;
+      font-size: medium;
+      font-style: oblique;
+    }
+
+    .contenido {
+
+      min-height: auto;
+      overflow-x: hidden;
+      
+
+
+    }
+
+    .parrafos {
+
+      text-align: justify;
+    }
+
+    table {
+      border-spacing: 30px;
+    }
+
+
+    th,
+    td {
+      padding: 15px;
+    }
+
+    /**SM**/
+    @media (min-width: 576px) {
+      .bg-logo {
+        background-color: #ffffff !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenido">
+    <div class="row ">
+      <div class="col-10 col-sm-8 bg-logo "> <!--Espacion para el logo del sitio -->
+        <img src="images/Tituloblanco.png" alt="" class="d-block d-sm-none" />
+        <img src="images/Titulo.png" alt="" class="d-none d-sm-block" />
+      </div>
+      <div class="col-2 col-sm-4 bg-green "> <!--Espacion para el icono del menu responsive-->
+        <div class="btn-menu d-block d-sm-none">
+          <button type="button" class="bg-green d-block border-0 m-1" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-greenmenu">
+      <div class="col-12 col-sm-8  d-none d-sm-block">
+        <!--Inicio de menus de pantalla grande-->
+        <ul class=" nav  text-white "> <!--Espacion para el menú principal del sitio en pantalla completa-->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Acad&eacute;mica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Investigaci&oacute;n </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Proyecci&oacute;n social </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Transparencia </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Contactos</a>
+          </li>
+        </ul>
+        <!--Fin de menu de pantala grande-->
+        <!--Inicio de iconos de derechos reservados y redes sociales-->
+      </div>
+      <div class="col-12 col-sm-4 bg-greenmenu d-none d-sm-block">
+        <!--Espacion para el area verde con la flecha de color amarillo-->
+
+        <div class=" d-none d-sm-block vertical-icon ">
+          <img class="rounded float-start" src="images/iconos/Flechasamarillas.png" />
+        </div>
+      </div>
+      <!--Fin de iconos de derechos reservados y redes sociales-->
+    </div>
+    <!--Inicio de iconos de derechos reservados y redes sociales para responsive-->
+    <div class="row align-items-center bg-green  ">
+      <!--Espacion que contiene los 2 espacios del  contenido y la paryte de los iconos de enlace -->
+      <div class="col-12 col-sm-8 bg-white  ">
+        <!--Inicio de iconos de derechos reservados y redes sociales para responsive-->
+        <div class="row  ">
+          <div class=" d-none d-sm-block ">
+            <img src="images/iconos/Barraicono.png" class="rounded float-start" />
+          </div>
+          <div class="col-12 ">
+            <div class="m-4 ">
+              <p class="fw-bold text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="black" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                  <path fill-rule="evenodd"
+                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg> Jefaturas acad&eacute;micas</p>
+              <!--Inicio de contenido interno-------------------------------------------------------------------------------------------------------->
+              <div class="table-responsive" >
+                <p class="fs-6 text-center">Jefes de los Departamentos Académicos de la Facultad</p>
+                <table class="table table-hover  table-bordered fs-6  table table-responsive table-striped ">
+                  <tr class="table-active ">
+                    <th>
+                      Departamento/Unidad
+                    </th>
+                    <th>
+                      Jefe del departamento o Unidad
+                    </th>
+                    <th>
+                      Correo intitucional
+                    </th>
+                  </tr>
+
+                  <tr>  <!--Datos de decano-->
+                    <td>
+                      Decanato      
+                    </td>
+                    <td>
+                      <p> Francisco Lara Ascencio </p>
+                      Correo:   francisco.lara@ues.edu.sv
+                    </td>
+                    <td>
+                      francisco.lara@ues.edu.sv
+                    </td>
+                   
+                  </tr>
+                  
+                  <tr> <!--Datos de vicedecano-->
+                    <td>
+                      Vicedecanato    
+                    </td>
+                    <td>
+                      Ing. Agr. Balmore Martínez sierra 
+                    </td>
+                    <td>
+                      ludwing.leyton@ues.edus.v
+                    </td>
+                  </tr>
+
+                  <tr> <!--Datos de secretatia-->
+                    <td>
+                      Secretaria 
+                    </td>
+                    <td>
+                      Ing. Agr. Ludwing Vladimir Leyton Barrientos 
+                    </td>
+                    <td>
+                      balmore.martinez@ues.edu.sv
+                    </td>
+                  </tr>
+
+                  <tr> <!--Datos de administración académica-->
+                    <td>
+                      Administraci&oacute;n Acad&eacute;mica
+                    </td>
+                    <td>
+                      Ing. Agr. Sigfredo ramos Cortez
+                    </td>
+                    <td>
+                      sigfredo.ramos@ues.edu.sv
+                    </td>
+                  </tr>
+
+                  
+                  <tr> <!--Datos de Planificación-->
+                    <td>
+                     Planificaci&oacute;n
+                    </td>
+                    <td>
+                      Ing. Agr. Msc. Juan Milton Flores Tensos
+                    </td>
+                    <td>
+                      juan.flores3@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Datos de Administración Financieran-->
+                    <td>
+                      Administraci&oacute;n Financiera
+                    </td>
+                    <td>
+                      Lic. Cruz Gilma Ortiz de Alarc&oacute;n 
+                    </td>
+                    <td>
+                      gilma.ortiz@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Escuela de Posgrado y Educación Continua-->
+                    <td>
+                      Escuela de Posgrado y Educaci&oacute;n Continua
+                    </td>
+                    <td>
+                      Ing. Agr. Msc.  Juan Francisco Alvarado Panameño
+                    </td>
+                    <td>
+                      francisco.panameno@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Departamento de Desarrollo Rural-->
+                    <td>
+                      Departamento de Desarrollo Rural
+                    </td>
+                    <td>
+                      Ing. Agr. Msc. Efraín Antonio Rodríguez Urrutia 
+                    </td>
+                    <td>
+                      efrain.rodriguez@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Departamento de Recursos Naturales-->
+                    <td>
+                      Departamento de Recursos Naturales
+                    </td>
+                    <td>
+                      Ing. Agr. José Mauricio Tejada 
+                    </td>
+                    <td>
+                      jose.tejada@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+
+                  <tr> <!--Departamento de Protección Vegetal-->
+                    <td>
+                      Departamento de Protección Vegetal
+                    </td>
+                    <td>
+                      Ing. Agr. Andrés Wilfredo Rivas Flores 
+                    </td>
+                    <td>
+                      andres.rivas1@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Departamento de Química Agrícola-->
+                    <td>
+                      Departamento de Química Agrícola
+                    </td>
+                    <td>
+                      Lic. Emerson Gustavo Martínez Hernández 
+                    </td>
+                    <td>
+                      emerson.martinez@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Departamento de Fitotecnia-->
+                    <td>
+                      Departamento de Fitotecnia
+                    </td>
+                    <td>
+                      Ing. Agr. Msc. Fidel Ángel Parada Berríos 
+                    </td>
+                    <td>
+                      emerson.martinez@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Departamento de Zootecnia-->
+                    <td>
+                      Departamento de Zootecnia
+                    </td>
+                    <td>
+                      Ing. Agr. Msc. Blanca Eugenia torres de Ortiz 
+                    </td>
+                    <td>
+                      blanca.bermudes@ues.edu.sv
+                    </td>
+                  </tr>
+             
+
+
+                  <tr> <!--Departamento de Medicina Veterinaria-->
+                    <td>
+                      Departamento de Zootecnia
+                    </td>
+                    <td>
+                      MVZ. Ricardo Ernesto Gamero Guandique 
+                    </td>
+                    <td>
+                      ricardo.gamero@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  
+                  <tr> <!--Departamento de Ingeniería Agroindustrial -->
+                    <td>
+                      Departamento de Ingeniería Agroindustrial 
+                    </td>
+                    <td>
+                      Ing. Agr. Msc. Omar Antonio Lara Díaz
+                    </td>
+                    <td>
+                      omar.lara@ues.edu.sv
+                    </td>
+                  </tr>
+
+                     
+                  <tr> <!--Proyección Social -->
+                    <td>
+                      Proyección Social
+                    </td>
+                    <td>
+                      Ing. Agr. David Ernesto Marín Hernández 
+                    </td>
+                    <td>
+                      david.marin@ues.edu.sv
+                    </td>
+                  </tr>
+
+                        
+                  <tr> <!--Investigación -->
+                    <td>
+                      Investigación
+                    </td>
+                    <td>
+                      Ing. Agr. Enrique Alas García
+                    </td>
+                    <td>
+                      enrique.alas@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                          
+                  <tr> <!--Educación en Línea -->
+                    <td>
+                      Educación en Línea 
+                    </td>
+                    <td>
+                      Ing. Agr. Oscar Mauricio Carrillo Turcios 
+                    </td>
+                    <td>
+                      oscar.carrillo2@ues.edu.sv
+                    </td>
+                  </tr>
+
+                  <tr> <!--Biblioteca-->
+                    <td>
+                      Biblioteca
+                    </td>
+                    <td>
+                      Tec. Jorge Alberto Escobar Hernández 
+                    </td>
+                    <td>
+                      jorge.escobar@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  
+                  <tr> <!--Estación Experimental y Prácticas -->
+                    <td>
+                      Estación Experimental y Prácticas
+                    </td>
+                    <td>
+                      Ing. Agr. Marvin Orlando Molina Escalante
+                    </td>
+                    <td>
+                      marvin.molina@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                    
+                  <tr> <!--Recursos Humanos  -->
+                    <td>
+                      Recursos Humanos 
+                    </td>
+                    <td>
+                      Lic. Linda Luz López Gálvez 
+                    </td>
+                    <td>
+                      linda.lopez@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Jefe de campo estación experimental  -->
+                    <td>
+                      Campo estación experimental  
+                    </td>
+                    <td>
+                      Ing. Humberto Ruiz Mejía 
+                    </td>
+                    <td>
+                      humberto.ruiz@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+
+                  
+                  <tr> <!--Cetag   -->
+                    <td>
+                      Cetag 
+                    </td>
+                    <td>
+                      Ing. Luis Alonso Alas Romero 
+                    <td>
+                      luis.alas@ues.edu.sv
+                    </td>
+                  </tr>
+
+
+                  <tr> <!--Unidad de Comunicaciones  -->
+                    <td>
+                      Unidad de Comunicaciones
+                    </td>
+                    <td>
+                      Lic. Lilian Xiomara Arévalo Benítez
+                    <td>
+                      Lily.arevalo@ues.edu.sv 
+                    </td>
+                  </tr>
+             
+              
+              
+                </table>
+              </div>
+              <!--Fin de contenido interno------------------------------------------------------------------------------------------------------------------------->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Inicio de codigo para iconos con enlaces en area verde para pantalla completa-->
+      <div class="col-12 col-sm-4 text-white text-center contenido  ">
+        <div class="row text-center contenido">
+          <div class="col-12 col-sm-4 text-end ">
+          </div>
+          <div class="col-12 col-sm-4 bg-green">
+            <!--Contenido para ver en pantalla completa-->
+            <div class="d-none d-sm-block text-center ">
+              <p><img src="images/iconos/Autoridades.png" alt="" class="rounded mx-auto  " />
+                <a href="../Autoridades/Autoridades.html" class="text-white">Autoridades</a>
+              </p>
+            </div>
+            <!--Contenido para ver en pantalla completa-->
+          </div>
+          <!--Contenido para ver en pantalla responsive-->
+          <!--Contenido para ver en pantalla responsive-->
+          <div class="col-12 col-sm-4 ">
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4 ">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Resenahistorica.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Rese&#241;a Historica</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Departamentos.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Departamentos</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Personal .png" alt="" class="rounded mx-auto" />
+                <p> <a href="index.html " class="text-white">Personal</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4">
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Unidades.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Unidades</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+            </div>
+          </div>
+        </div>
+        <!--  Fin  de codigo para iconos con enlaces en area verde para pantalla completa-->
+      </div>
+    </div>
+    <!--Espacio para el area de los iconos del footer-->
+    <div class="row ">
+      <div class="col-12 col-md-8">
+        <div class="row  ">
+          <div class="col-1 col-sm-6 ">
+            <div class="iconosredes contenido2 d-none d-sm-block ">
+              <img src="images/iconos/Derechosreservados.png" alt="" />
+            </div>
+          </div>
+          <div class="col-1 col-sm-1   ">
+            <a href="https://www.facebook.com/F.agroues">
+              <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Facebook.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-1 col-sm-1 ">
+          <a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 ">
+            <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Correoicono.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1   ">
+        <a href="https://www.instagram.com/f.agroues/">
+          <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Instagram.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="col-1 col-sm-1  ">
+      <a href="https://twitter.com/F_Agroues">
+        <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Twi.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="col-1 col-sm-1 ">
+    <a href="https://www.tiktok.com/@fac.agroues">
+      <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Tik.png" alt="" />
+    </a>
+  </div>
+  </div>
+  <div class="col-1 col-sm-1 ">
+    <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured">
+      <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Youtube.png" alt="" />
+    </a>
+  </div>
+  </div>
+
+  <!--Enlaces de redes sociales para responsive-->
+  <div class="row  bg-green   d-block d-sm-none  vertical-icon align-items-center">
+    <!--Espacio para el contenido de responsive en la zona verde-->
+    <!--Iconos con enlaces-->
+    <table class="vertical-icon align-items-center iconosredes    " style="font-size: small;">
+      <tr>
+        <th>
+          <img src="images/iconos/Autoridadessmall.png" alt="" class="rounded mx-auto  " />
+          <p><a href="Autoridades.html" class="text-white">Autoridades</a></p>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Resesmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Rese&#241;a Historica</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Departamentosmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Departamentos</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Personalsmall.png" alt="" class="rounded mx-auto" />
+            <p> <a href="index.html " class="text-white">Personal</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Unidadessmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Unidades</a></p>
+          </div>
+        </th>
+      </tr>
+    </table>
+    <!--Iconos con enlaces-->
+  </div>
+  <br>
+  <div class="row  bg-green   d-block d-sm-none  vertical-icon align-items-center">
+
+    <!--Iconos con enlaces a sitios externos-->
+    <table class=" vertical-icon align-items-center iconosredes  table-responsive " style="font-size: small;">
+      <tr>
+        <th>
+          <img src="images/iconos/Campusvirtual.png" alt="" /><br>
+
+          <a href="https://campus.ues.edu.sv/login/index.php" class="text-white">Campus virtual</a>
+
+        </th>
+        <th>
+          <img src="images/iconos/Expedientelinea.png" alt="" /><br>
+          <a href="https://eel.ues.edu.sv/" class="text-white">Expediente en l&iacute;nea </a>
+        </th>
+        <th>
+          <img src="images/iconos/Correo.png" alt="" /><br>
+          <a href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 "
+            class="text-white">Correo institucional</a>
+        </th>
+        <th>
+          <img src="images/iconos/Correo.png" alt="" /><br>
+          <a href="https://www.ues.edu.sv/" class="text-white">Universidad de El Salvador </a>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <!--Iconos con enlaces a sitios externos-->
+  </div>
+  <div class="row  bg-green   d-block d-sm-none  align-items-center vertical-icon iconosredes">
+    <!--Iconos de redes sociales-->
+    <table class="vertical-align: bottom;">
+      <tr>
+        <th>
+          <a href="https://www.facebook.com/F.agroues"><img class="rounded mx-auto d-block"
+              src="images/iconos/Facebookv.png" alt="" /></a>
+        </th>
+        <th>
+          <a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1">
+            <img src="images/iconos/Correoiconov.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://www.instagram.com/f.agroues/">
+            <img src="images/iconos/Instagramv.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://twitter.com/F_Agroues">
+            <img src="images/iconos/Twiv.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://www.tiktok.com/@fac.agroues">
+            <img src="images/iconos/Tikv.png" alt="" /> </a>
+        </th>
+        <th>
+          <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured">
+            <img src="images/iconos/Youtubev.png" alt="" /></a>
+        </th>
+      </tr>
+    </table>
+    <!--Iconos de redes sociales-->
+  </div>
+  <br>
+  <div class="row  bg-green   d-block d-sm-none ">
+    <div class="row     d-block d-sm-none   text-center    ">
+      <img class="img-fluid logore" src="images/Reserblanco.png" alt="" />
+    </div>
+  </div>
+  <!--Enlaces de redes sociales para responsive-->
+  </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <!--
+        Inicio de enlaces del footer para pantalla completa-->
+    <div class="row  bg-green  text-white text-center ">
+      <div class="col-12 col-sm-3 d-none d-sm-block ">
+        <img src="images/iconos/Campusvirtual.png" alt="" />
+        <p class="fs-6">
+          <a href="https://campus.ues.edu.sv/login/index.php" class="text-white">Campus virtual</a>
+        </p>
+      </div>
+      <div class="col-12 col-sm-3 d-none d-sm-block ">
+        <img src="images/iconos/Expedientelinea.png" alt="" />
+        <p class="fs-6"><a href="https://eel.ues.edu.sv/" class="text-white">Expediente en l&iacute;nea </a></p>
+      </div>
+      <div class="col-12 col-sm-3  d-none d-sm-block ">
+        <img src="images/iconos/Correo.png" alt="" />
+        <p class="fs-6"><a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 "
+            class="text-white">Correo institucional</a></p>
+      </div>
+      <div class="col-12 col-sm-3  d-none d-sm-block">
+        <img src="images/iconos/Correo.png" alt="" />
+        <p class="fs-6"> <a href="https://www.ues.edu.sv/" class="text-white">Universidad de El Salvador </a></p>
+      </div>
+    </div>
+    <!--Fin de enlaces del footer para pantalla completa -->
+  </div>
+  </div>
+  <!--Espacio para el area de los iconos del footer-->
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Men&uacute;</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <a href="Index.html">Inicio</a>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#quienessomos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Quienes somos
+                </button>
+              </h2>
+              <div id="quienessomos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Reseña Historica
+                    </a>
+                    <a href="Autoridades/Autoridades.html"
+                      class="list-group-item list-group-item-action">Autoridades</a>
+                    <a href="#" class="list-group-item list-group-item-action">Departamentos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Unidades</a>
+                    <a class="list-group-item list-group-item-action disabled">Personal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#noticias" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Noticias
+                </button>
+              </h2>
+              <div id="noticias" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Acontecer
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Boletines</a>
+                    <a href="#" class="list-group-item list-group-item-action">Reportajes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#academica" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Academica
+                </button>
+              </h2>
+              <div id="academica" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Oferta Academica
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Avisos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tramites acad&eacute;micos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Formularios</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#investigacion" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Investigacion
+                </button>
+              </h2>
+              <div id="investigacion" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Agrociencia</a>
+                    <a href="#" class="list-group-item list-group-item-action">ICAUES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#proyeccionsocial" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Proyecci&oacute;n social
+                </button>
+              </h2>
+              <div id="proyeccionsocial" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">UDA</a>
+                    <a href="#" class="list-group-item list-group-item-action">Convenios</a>
+                    <a href="#" class="list-group-item list-group-item-action">Cooperaci&oacute;n</a>
+                    <a href="#" class="list-group-item list-group-item-action">Gesti&oacute;n de proyectos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#transparencia" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  Transparencia
+                </button>
+              </h2>
+              <div id="transparencia" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Memoria de labores</a>
+                    <a href="#" class="list-group-item list-group-item-action">Informes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#contactos" aria-expanded="false" aria-controls="flush-collapseEight">
+                  Contactos
+                </button>
+              </h2>
+              <div id="contactos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Telefonos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Correos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

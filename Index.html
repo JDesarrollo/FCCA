@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <link rel="shortcut icon" href="images/icono.png">
+  <title>Facultad de Ciencias Agron&omicas</title>
+  <!--<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/grid/">-->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="grid.css" rel="stylesheet">
+
+  <!--Inicio de css-->
+  <style>
+    .bg-green {
+      background-color: #0F7733;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .bg-greenmenu {
+      background-color: #0c3d00;
+    }
+
+    .bg-logo {
+      background-color: #0F7733;
+    }
+
+    .iconosredes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+    }
+
+    .btn-titulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 3rem;
+    }
+
+    .textotitulo p {
+      text-align: center;
+      font-size: medium;
+      font-style: oblique;
+    }
+
+    .contenido {
+      overflow-x: hidden;
+      min-height: 0px;
+      border: lightpink;
+
+    }
+
+    .vertical-icon {
+      display: flex !important;
+      justify-content: flex-start;
+      align-items: center;
+      height: 2.6rem;
+    }
+
+    .contenido2 {
+      min-height: 8vh;
+    }
+
+    .caru {
+      min-height: 2vh;
+    }
+
+    .contenedorcar {
+      min-height: 10vh;
+    }
+
+    .logore {
+      max-width: 200px;
+    }
+
+
+
+
+    /**SM**/
+    @media (min-width: 576px) {
+      .bg-logo {
+        background-color: #ffffff !important;
+      }
+
+
+      .contenido {
+
+        min-height: 80vh;
+        border: lightseagreen;
+
+      }
+
+
+
+    }
+  </style>
+  <!--Fin  de css-->
+</head>
+
+<body>
+  <div class="contenido"> <!--Inicio del div que contiene todo el contenido de la página-->
+
+    <!--*******************************************************************************************-->
+    <div class="row"> <!--Primer fila para el contenido del grid-->
+      <div class="col-10 col-sm-8  ">
+        <!--Inicio para el espacion para el logo del sitio/ Primer columna de 8 -->
+
+        <div class="d-block d-sm-none bg-green">
+          <!--Espacio de div que contiene los elementos  en la parte del menu para el responsive-->
+
+          <div class="row  bg-green  text-white text-center">
+
+            <table>
+              <tr>
+                <th>
+                  <img src="images/iconos/Campusvirtual.png" alt="" />
+                  <p class="fs-6">
+                    <a href="https://campus.ues.edu.sv/login/index.php" class="text-white">Campus
+                      virtual</a>
+                  </p>
+
+                </th>
+
+                <th>
+                  <img src="images/iconos/Expedientelinea.png" alt="" />
+                  <p class="fs-6"><a href="https://eel.ues.edu.sv/" class="text-white">Expediente en l&iacute;nea</a>
+                  </p>
+
+                </th>
+
+                <th>
+                  <img src="images/iconos/Correo.png" alt="" />
+                  <p class="fs-6">
+                    <a href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1"
+                      class="text-white">Correo institucional</a>
+                  </p>
+
+                </th>
+
+                <th>
+                  <img src="images/iconos/Correo.png" alt="" />
+                  <p class="fs-6">
+                    <a href="https://www.ues.edu.sv/" class="text-white">Universidad de El
+                      Salvador</a>
+                  </p>
+
+                </th>
+
+              </tr>
+
+            </table>
+
+          </div>
+
+
+
+        </div><!--Espacio de div que contiene los elementos  en la parte del menu para el responsive-->
+
+        <img src="images/Titulo.png" alt="" class="d-none d-sm-block" /> <!--Primer fila -->
+      </div> <!--Fin  para el espacion para el logo del sitio/ Primer columna de 8 -->
+      <div class="col-2 col-sm-4 bg-green d-block d-sm-none text-center">
+        <!--Espacion para el icono del menu responsive, espacio de columna de 4 para formar las 12 columas-->
+        <div class="btn-menu d-block d-sm-none  text-center"> <!--Este bloque solo se  muestra en la vista de responsive-->
+
+          <button type="button" class="bg-green d-block border-0 m-1 " data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div> <!--Cierre de primer fila para las 2 primer columnas del grid de  12 columnas-->
+    <!--*******************************************************************************************-->
+
+    <!--*******************************************************************************************-->
+    <div class="row bg-greenmenu "><!--Inicio de segunda fila -->
+      <div class="col-12 col-sm-8  d-none d-sm-block"> <!--Inicio de columna de 8 columas para el espacio del menu -->
+        <!--Inicio de menus de pantalla grande-->
+        <ul class=" nav  text-white "> <!--Espacio para el menú principal del sitio en pantalla completa-->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Quienes_somos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Academica.html">Academica</a> <!--Segunda  fila -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Investigacion.html">Investigacion </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Proyeccion.html">Proyeccion social </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Transparencia.html">Transparencia </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Contactos.html">Contactos</a>
+          </li>
+        </ul>
+        <!--Fin de menu de pantala grande-->
+      </div> <!--Fin de la columna de 8  que contiene el menú principal-->
+      <div class="col-12 col-sm-4 bg-greenmenu d-none d-sm-block">
+        <!--Espacion para el area verde con la flecha de color amarillo, inicio de la columna de 4-->
+        <div class=" d-none d-sm-block vertical-icon ">
+          <img class="rounded float-start" src="images/iconos/Flechasamarillas.png" />
+        </div>
+      </div> <!--Finalización de la columna de 4-->
+    </div> <!--Fin de segunda fila-->
+    <!--*******************************************************************************************-->
+
+
+
+
+    <!--*************************************************************************************************-->
+
+    <div class="row ">
+
+      <div class="row d-block d-sm-none ">
+        <div class="col-12 col-sm-12  text-center fs-3 fw-bolder">
+          <img src="images/Logoportada.png" class="d-block w-100 logoportada" alt="...">
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12  text-center fs-3 fw-bolder d-block d-sm-none  ">
+        <h1>UNIVERSIDAD DE EL SALVADOR</h1>
+        <h2>FACULTAD DE CIENCIAS AGRON&Oacute;MICAS </h2>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="row justify-content-center "> <!--Inicio de tercer fila-->
+
+      <!--Espacion que contiene los 2 espacios del  contenido y la paryte de los iconos de enlace -->
+      <div class="col-12 col-sm-12 contenido"> <!--Inicio de primer columna de 12-->
+
+
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/agro02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/agro02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/agro02.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    
+
+      </div> <!--Fin de columna de 12-->
+
+      <!--Carrusel para responsive--->
+
+   
+
+
+        <div id="carouselExampleIndicators" class="carousel slide d-block d-sm-none ">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/CarRepo.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/agro02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/agro02.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    
+
+    
+      
+      <!--Carrusel para responsive--->
+
+
+
+
+
+    </div> <!--Fin  de tercer fila-->
+    <!--*************************************************************************************************-->
+
+
+    <!--Espacio para el area de los iconos del footer-->
+    <div class="row mt-4 ">
+      <div class="col-12 col-md-8">
+        <div class="row   ">
+          <div class="col-1 col-sm-6 ">
+            <div class="iconosredes contenido2 d-none d-sm-block">
+              <img src="images/iconos/Derechosreservados.png" alt="" />
+            </div>
+          </div>
+          <div class="col-1 col-sm-1   ">
+            <div class="iconosredes d-none d-sm-block">
+              <a href="https://www.facebook.com/F.agroues"><img src="images/iconos/Facebook.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-1 col-sm-1 ">
+            <div class="iconosredes d-none d-sm-block">
+              <a
+                href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 ">
+                <img src="images/iconos/Correoicono.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-1 col-sm-1   ">
+            <div class="iconosredes d-none d-sm-block">
+              <a href="https://www.instagram.com/f.agroues/">
+                <img src="images/iconos/Instagram.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-1 col-sm-1  ">
+            <div class="iconosredes d-none d-sm-block"><a href="https://twitter.com/F_Agroues">
+                <img src="images/iconos/Twi.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-1 col-sm-1 ">
+            <div class="iconosredes d-none d-sm-block">
+              <a href="https://www.tiktok.com/@fac.agroues"><img src="images/iconos/Tik.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-1 col-sm-1 ">
+            <div class="iconosredes d-none d-sm-block">
+              <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured"><img
+                  src="images/iconos/Youtube.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 ">
+        <!--
+        Inicio de enlaces del footer para pantalla completa-->
+        <div class="row     text-center ">
+          <div class="col-12 col-sm-3 d-none d-sm-block ">
+            <img src="images/iconos/campusn.png" alt="" />
+            <p class="fs-6">
+              <a href="https://campus.ues.edu.sv/login/index.php" class="text-dark">Campus virtual</a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-3 d-none d-sm-block">
+            <img src="images/iconos/Expedienten.png" alt="" />
+            <p class="fs-6"><a href="https://eel.ues.edu.sv/" class="text-dark">Expediente en l&iacute;nea </a></p>
+          </div>
+          <div class="col-12 col-sm-3 d-none d-sm-block  ">
+            <img src="images/iconos/Correon.png" alt="" />
+            <p class="fs-6"><a
+                href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 "
+                class="text-dark">Correo institucional</a></p>
+          </div>
+          <div class="col-12 col-sm-3 d-none d-sm-block">
+            <img src="images/iconos/Correon.png" alt="" />
+            <p class="fs-6"> <a href="https://www.ues.edu.sv/" class="text-dark">Universidad de El Salvador </a></p>
+          </div>
+        </div>
+        <!--Fin de enlaces del footer para pantalla completa -->
+
+
+
+        <!--Contenido para responsive de los iconos de las redes sociales-->
+
+
+        <div class="row  text-white text-center   d-block d-sm-none  ">
+          <table>
+            <tr>
+              <th>
+                <a href="https://www.facebook.com/F.agroues"><img class="rounded mx-auto d-block"
+                    src="images/iconos/Facebook.png" alt="" /></a>
+              </th>
+              <th>
+                <a
+                  href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1">
+                  <img src="images/iconos/Correoicono.png" alt="" /></a>
+              </th>
+              <th>
+                <a href="https://www.instagram.com/f.agroues/">
+                  <img src="images/iconos/Instagram.png" alt="" /></a>
+              </th>
+              <th>
+                <a href="https://twitter.com/F_Agroues">
+                  <img src="images/iconos/Twi.png" alt="" /></a>
+              </th>
+              <th>
+                <a href="https://www.tiktok.com/@fac.agroues">
+                  <img src="images/iconos/Tik.png" alt="" /> </a>
+              </th>
+              <th>
+                <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured">
+                  <img src="images/iconos/Youtube.png" alt="" /></a>
+              </th>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="row     d-block d-sm-none   text-center fs-3 fw-bolder   ">
+          <img class="img-fluid logore" src="images/Resercadosrespon.png" alt="" />
+
+        </div>
+
+
+        <!---->
+
+
+
+
+      </div>
+
+    </div>
+    <!--Espacio para el area de los iconos del footer-->
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Men&uacute;</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a href="index.html">Inicio</a>
+                  </button>
+                </h2>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#quienessomos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Quienes somos
+                  </button>
+                </h2>
+                <div id="quienessomos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        Rese&#241;a Historica
+                      </a>
+                      <a href="Autoridades/Autoridades.html" class="list-group-item list-group-item-action">Autoridades</a>
+                      <a href="#" class="list-group-item list-group-item-action">Departamentos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Unidades</a>
+                      <a class="list-group-item list-group-item-action disabled">Personal</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#noticias" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Noticias
+                  </button>
+                </h2>
+                <div id="noticias" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        Acontecer
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">Boletines</a>
+                      <a href="#" class="list-group-item list-group-item-action">Reportajes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#academica" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Academica
+                  </button>
+                </h2>
+                <div id="academica" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        Oferta Academica
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">Avisos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Tramites academicos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Formularios</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#investigacion" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Investigacion
+                  </button>
+                </h2>
+                <div id="investigacion" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Agrociencia</a>
+                      <a href="#" class="list-group-item list-group-item-action">ICAUES</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#proyeccionsocial" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Proyeccion social
+                  </button>
+                </h2>
+                <div id="proyeccionsocial" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">UDA</a>
+                      <a href="#" class="list-group-item list-group-item-action">Convenios</a>
+                      <a href="#" class="list-group-item list-group-item-action">Cooperacion</a>
+                      <a href="#" class="list-group-item list-group-item-action">Gestion de proyectos</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#transparencia" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Transparencia
+                  </button>
+                </h2>
+                <div id="transparencia" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Memoria de labores</a>
+                      <a href="#" class="list-group-item list-group-item-action">Informes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#contactos" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Contactos
+                  </button>
+                </h2>
+                <div id="contactos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Telefonos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Correos</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!--Fin del div que contiene todo el contenido de la pagina-->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

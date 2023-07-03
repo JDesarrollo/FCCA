@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <link rel="shortcut icon" href="images/icono.png">
+  <title>Facultad de Ciencias Agron&oacute;micas</title>
+  <!--<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/grid/">-->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="grid.css" rel="stylesheet">
+  <style>
+    .bg-green {
+      background-color: #0F7733;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .bg-greenmenu {
+      background-color: #0c3d00;
+    }
+
+    .bg-logo {
+      background-color: #0F7733;
+    }
+
+    .iconosredes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+    }
+
+    .btn-titulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 3rem;
+    }
+
+    .textotitulo p {
+      text-align: center;
+      font-size: medium;
+      font-style: oblique;
+    }
+
+    .contenido {
+
+      min-height: auto;
+      overflow-x: hidden;
+
+
+
+    }
+
+    .parrafos {
+
+      text-align: justify;
+    }
+
+    table {
+      border-spacing: 30px;
+    }
+
+
+    th,
+    td {
+      padding: 15px;
+    }
+
+    /**SM**/
+    @media (min-width: 576px) {
+      .bg-logo {
+        background-color: #ffffff !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenido">
+    <div class="row ">
+      <div class="col-10 col-sm-8 bg-logo "> <!--Espacion para el logo del sitio -->
+        <img src="images/Tituloblanco.png" alt="" class="d-block d-sm-none" />
+        <img src="images/Titulo.png" alt="" class="d-none d-sm-block" />
+      </div>
+      <div class="col-2 col-sm-4 bg-green "> <!--Espacion para el icono del menu responsive-->
+        <div class="btn-menu d-block d-sm-none">
+          <button type="button" class="bg-green d-block border-0 m-1" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-greenmenu">
+      <div class="col-12 col-sm-8  d-none d-sm-block">
+        <!--Inicio de menus de pantalla grande-->
+        <ul class=" nav  text-white "> <!--Espacion para el menú principal del sitio en pantalla completa-->
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Acad&eacute;mica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Investigaci&oacute;n </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Proyecci&oacute;n social </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Transparencia </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Contactos</a>
+          </li>
+        </ul>
+        <!--Fin de menu de pantala grande-->
+        <!--Inicio de iconos de derechos reservados y redes sociales-->
+      </div>
+      <div class="col-12 col-sm-4 bg-greenmenu d-none d-sm-block">
+        <!--Espacion para el area verde con la flecha de color amarillo-->
+
+        <div class=" d-none d-sm-block vertical-icon ">
+          <img class="rounded float-start" src="images/iconos/Flechasamarillas.png" />
+        </div>
+      </div>
+      <!--Fin de iconos de derechos reservados y redes sociales-->
+    </div>
+    <!--Inicio de iconos de derechos reservados y redes sociales para responsive-->
+    <div class="row align-items-center bg-green  ">
+      <!--Espacion que contiene los 2 espacios del  contenido y la paryte de los iconos de enlace -->
+      <div class="col-12 col-sm-8 bg-white  ">
+        <!--Inicio de iconos de derechos reservados y redes sociales para responsive-->
+        <div class="row  ">
+          <div class=" d-none d-sm-block ">
+            <img src="images/iconos/Barraicono.png" class="rounded float-start" />
+          </div>
+          <div class="col-12 ">
+            <div class="m-4 ">
+              <p class="fw-bold text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="black" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                  <path fill-rule="evenodd"
+                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg> Expediente de Graduación</p>
+              <!--Inicio de contenido interno-------------------------------------------------------------------------------------------------------->
+              <div class="table-responsive  align-items-center">
+                <p class="fs-6 text-center">Indicaciones generales para la realización del Expediente de Graduación para
+                  PRE-GRADO y MAESTRÍAS</p>
+                <table class="  fs-6  table table-responsive justify-content  ">
+                  <tr> <!--Contenido -->
+                    <td>
+                      <img src="images/Imagen01.png" alt="" class="rounded mx-auto  " />
+                    </td>
+                    <td class="justify-content">
+
+                      <p> "PRE-GRADO" Indicaciones generales para la realización del Expediente de Graduación.</p>
+                      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-file-pdf" viewBox="0 0 16 16">
+                          <path
+                            d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                          <path
+                            d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                        </svg> <a href="Documentos/Indicaciones_Generales_Expediente_de_Graduacion.pdf" download>
+                          Descargar archivo </a></p>
+                    </td>
+                  </tr>
+                  <tr> <!--Contenido -->
+                    <td>
+                      <img src="images/Imagen01.png" alt="" class="rounded mx-auto  " />
+                    </td>
+                    <td>
+                      <p>"MAESTRÍAS" Indicaciones generales para la realización del Expediente de Graduación. </p>
+                      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-file-pdf" viewBox="0 0 16 16">
+                          <path
+                            d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                          <path
+                            d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                        </svg> <a href="Documentos/Indicaciones_Generales_Expediente_de_Graduacion_MAESTRIA.pdf"
+                          download="Indicaciones.pdf"> Descargar archivo </a></p>
+                    </td>
+                  </tr>
+                  <tr> <!--Contenido -->
+                    <td>
+                      <img src="images/Imagen01.png" alt="" class="rounded mx-auto  " />
+                    </td>
+                    <td>
+                      <p> Formulario de Datos Personales de Graduados para la UDA.</p>
+                      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-file-pdf" viewBox="0 0 16 16">
+                          <path
+                            d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                          <path
+                            d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                        </svg> <a href="Documentos/F_ACAD_UDA.pdf" download="Indicaciones.pdf"> Descargar archivo </a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--Fin de contenido interno------------------------------------------------------------------------------------------------------------------------->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Inicio de codigo para iconos con enlaces en area verde para pantalla completa-->
+      <div class="col-12 col-sm-4 text-white text-center contenido  ">
+        <div class="row text-center contenido">
+          <div class="col-12 col-sm-4 text-end ">
+          </div>
+          <div class="col-12 col-sm-4 bg-green">
+            <!--Contenido para ver en pantalla completa-->
+            <div class="d-none d-sm-block text-center ">
+              <p><img src="images/iconos/Autoridades.png" alt="" class="rounded mx-auto  " />
+                <a href="../Autoridades/Autoridades.html" class="text-white">Autoridades</a>
+              </p>
+            </div>
+            <!--Contenido para ver en pantalla completa-->
+          </div>
+          <!--Contenido para ver en pantalla responsive-->
+          <!--Contenido para ver en pantalla responsive-->
+          <div class="col-12 col-sm-4 ">
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4 ">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Resenahistorica.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Rese&#241;a Historica</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Departamentos.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Departamentos</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Personal .png" alt="" class="rounded mx-auto" />
+                <p> <a href="index.html " class="text-white">Personal</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4">
+            </div>
+            <div class="col-12 col-sm-4">
+              <!--Contenido para ver en pantalla completa-->
+              <div class="d-none d-sm-block">
+                <img src="images/iconos/Unidades.png" alt="" class="rounded mx-auto" />
+                <p><a href="index.html " class="text-white">Unidades</a></p>
+              </div>
+              <!--Contenido para ver en pantalla completa-->
+            </div>
+            <div class="col-12 col-sm-4">
+            </div>
+          </div>
+        </div>
+        <!--  Fin  de codigo para iconos con enlaces en area verde para pantalla completa-->
+      </div>
+    </div>
+    <!--Espacio para el area de los iconos del footer-->
+    <div class="row ">
+      <div class="col-12 col-md-8">
+        <div class="row  ">
+          <div class="col-1 col-sm-6 ">
+            <div class="iconosredes contenido2 d-none d-sm-block ">
+              <img src="images/iconos/Derechosreservados.png" alt="" />
+            </div>
+          </div>
+          <div class="col-1 col-sm-1   ">
+            <a href="https://www.facebook.com/F.agroues">
+              <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Facebook.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-1 col-sm-1 ">
+          <a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 ">
+            <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Correoicono.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1   ">
+        <a href="https://www.instagram.com/f.agroues/">
+          <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Instagram.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="col-1 col-sm-1  ">
+      <a href="https://twitter.com/F_Agroues">
+        <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Twi.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="col-1 col-sm-1 ">
+    <a href="https://www.tiktok.com/@fac.agroues">
+      <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Tik.png" alt="" />
+    </a>
+  </div>
+  </div>
+  <div class="col-1 col-sm-1 ">
+    <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured">
+      <div class="iconosredes d-none d-sm-block"><img src="images/iconos/Youtube.png" alt="" />
+    </a>
+  </div>
+  </div>
+
+  <!--Enlaces de redes sociales para responsive-->
+  <div class="row  bg-green   d-block d-sm-none  vertical-icon align-items-center">
+    <!--Espacio para el contenido de responsive en la zona verde-->
+    <!--Iconos con enlaces-->
+    <table class="vertical-icon align-items-center iconosredes    " style="font-size: small;">
+      <tr>
+        <th>
+          <img src="images/iconos/Autoridadessmall.png" alt="" class="rounded mx-auto  " />
+          <p><a href="Autoridades.html" class="text-white">Autoridades</a></p>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Resesmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Rese&#241;a Historica</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Departamentosmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Departamentos</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Personalsmall.png" alt="" class="rounded mx-auto" />
+            <p> <a href="index.html " class="text-white">Personal</a></p>
+          </div>
+        </th>
+        <th>
+          <div class="d-block d-sm-none">
+            <img src="images/iconos/Unidadessmall.png" alt="" class="rounded mx-auto" />
+            <p><a href="index.html " class="text-white">Unidades</a></p>
+          </div>
+        </th>
+      </tr>
+    </table>
+    <!--Iconos con enlaces-->
+  </div>
+  <br>
+  <div class="row  bg-green   d-block d-sm-none  vertical-icon align-items-center">
+
+    <!--Iconos con enlaces a sitios externos-->
+    <table class=" vertical-icon align-items-center iconosredes  table-responsive " style="font-size: small;">
+      <tr>
+        <th>
+          <img src="images/iconos/Campusvirtual.png" alt="" /><br>
+
+          <a href="https://campus.ues.edu.sv/login/index.php" class="text-white">Campus virtual</a>
+
+        </th>
+        <th>
+          <img src="images/iconos/Expedientelinea.png" alt="" /><br>
+          <a href="https://eel.ues.edu.sv/" class="text-white">Expediente en l&iacute;nea </a>
+        </th>
+        <th>
+          <img src="images/iconos/Correo.png" alt="" /><br>
+          <a href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 "
+            class="text-white">Correo institucional</a>
+        </th>
+        <th>
+          <img src="images/iconos/Correo.png" alt="" /><br>
+          <a href="https://www.ues.edu.sv/" class="text-white">Universidad de El Salvador </a>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <!--Iconos con enlaces a sitios externos-->
+  </div>
+  <div class="row  bg-green   d-block d-sm-none  align-items-center vertical-icon iconosredes">
+    <!--Iconos de redes sociales-->
+    <table class="vertical-align: bottom;">
+      <tr>
+        <th>
+          <a href="https://www.facebook.com/F.agroues"><img class="rounded mx-auto d-block"
+              src="images/iconos/Facebookv.png" alt="" /></a>
+        </th>
+        <th>
+          <a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1">
+            <img src="images/iconos/Correoiconov.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://www.instagram.com/f.agroues/">
+            <img src="images/iconos/Instagramv.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://twitter.com/F_Agroues">
+            <img src="images/iconos/Twiv.png" alt="" /></a>
+        </th>
+        <th>
+          <a href="https://www.tiktok.com/@fac.agroues">
+            <img src="images/iconos/Tikv.png" alt="" /> </a>
+        </th>
+        <th>
+          <a href="https://www.youtube.com/channel/UCVOYG-zqznczYf3AfMO5G0g/featured">
+            <img src="images/iconos/Youtubev.png" alt="" /></a>
+        </th>
+      </tr>
+    </table>
+    <!--Iconos de redes sociales-->
+  </div>
+  <br>
+  <div class="row  bg-green   d-block d-sm-none ">
+    <div class="row     d-block d-sm-none   text-center    ">
+      <img class="img-fluid logore" src="images/Reserblanco.png" alt="" />
+    </div>
+  </div>
+  <!--Enlaces de redes sociales para responsive-->
+  </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <!--
+        Inicio de enlaces del footer para pantalla completa-->
+    <div class="row  bg-green  text-white text-center ">
+      <div class="col-12 col-sm-3 d-none d-sm-block ">
+        <img src="images/iconos/Campusvirtual.png" alt="" />
+        <p class="fs-6">
+          <a href="https://campus.ues.edu.sv/login/index.php" class="text-white">Campus virtual</a>
+        </p>
+      </div>
+      <div class="col-12 col-sm-3 d-none d-sm-block ">
+        <img src="images/iconos/Expedientelinea.png" alt="" />
+        <p class="fs-6"><a href="https://eel.ues.edu.sv/" class="text-white">Expediente en l&iacute;nea </a></p>
+      </div>
+      <div class="col-12 col-sm-3  d-none d-sm-block ">
+        <img src="images/iconos/Correo.png" alt="" />
+        <p class="fs-6"><a
+            href="https://correo.ues.edu.sv/login/module.php/core/loginuserpass.php?AuthState=_8b42351eda82cf4d64d707cfda088f714950a4ce78%3Ahttps%3A%2F%2Fcorreo.ues.edu.sv%2Flogin%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1687792100%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fues.edu.sv%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fmail%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1 "
+            class="text-white">Correo institucional</a></p>
+      </div>
+      <div class="col-12 col-sm-3  d-none d-sm-block">
+        <img src="images/iconos/Correo.png" alt="" />
+        <p class="fs-6"> <a href="https://www.ues.edu.sv/" class="text-white">Universidad de El Salvador </a></p>
+      </div>
+    </div>
+    <!--Fin de enlaces del footer para pantalla completa -->
+  </div>
+  </div>
+  <!--Espacio para el area de los iconos del footer-->
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Men&uacute;</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <a href="Index.html">Inicio</a>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#quienessomos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Quienes somos
+                </button>
+              </h2>
+              <div id="quienessomos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Reseña Historica
+                    </a>
+                    <a href="Autoridades/Autoridades.html"
+                      class="list-group-item list-group-item-action">Autoridades</a>
+                    <a href="#" class="list-group-item list-group-item-action">Departamentos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Unidades</a>
+                    <a class="list-group-item list-group-item-action disabled">Personal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#noticias" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Noticias
+                </button>
+              </h2>
+              <div id="noticias" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Acontecer
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Boletines</a>
+                    <a href="#" class="list-group-item list-group-item-action">Reportajes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#academica" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Academica
+                </button>
+              </h2>
+              <div id="academica" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      Oferta Academica
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Avisos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tramites acad&eacute;micos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Formularios</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#investigacion" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Investigacion
+                </button>
+              </h2>
+              <div id="investigacion" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Agrociencia</a>
+                    <a href="#" class="list-group-item list-group-item-action">ICAUES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#proyeccionsocial" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Proyecci&oacute;n social
+                </button>
+              </h2>
+              <div id="proyeccionsocial" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">UDA</a>
+                    <a href="#" class="list-group-item list-group-item-action">Convenios</a>
+                    <a href="#" class="list-group-item list-group-item-action">Cooperaci&oacute;n</a>
+                    <a href="#" class="list-group-item list-group-item-action">Gesti&oacute;n de proyectos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#transparencia" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  Transparencia
+                </button>
+              </h2>
+              <div id="transparencia" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Memoria de labores</a>
+                    <a href="#" class="list-group-item list-group-item-action">Informes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#contactos" aria-expanded="false" aria-controls="flush-collapseEight">
+                  Contactos
+                </button>
+              </h2>
+              <div id="contactos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Telefonos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Correos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
